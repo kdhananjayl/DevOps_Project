@@ -13,7 +13,7 @@ pipeline {
       steps {
         echo 'Nexus Uploader....'
         //nexusArtifactUploader artifacts: [[artifactId: 'app', classifier: '', file: 'target/app-1.0.0.4.war', type: 'war']], credentialsId: 'nexus3', groupId: 'com.mithun', nexusUrl: '54.226.205.193:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'jenkins', version: '1.0.0.4'     
-        nexusArtifactUploader artifacts: [[artifactId: 'myapp', classifier: '', file: 'target/myapp-4.0.0.war', type: 'war']], credentialsId: 'nexus3', groupId: 'com.mithun', nexusUrl: '54.226.205.193:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'jenkins', version: '4.0.0'      
+        nexusArtifactUploader artifacts: [[artifactId: 'myapp', classifier: '', file: 'target/myapp-4.0.1.war', type: 'war']], credentialsId: 'nexus3', groupId: 'com.mithun', nexusUrl: '54.226.205.193:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'jenkins', version: '4.0.1'      
       }
     }    
     stage ('Deploy') {
