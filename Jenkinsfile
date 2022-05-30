@@ -18,7 +18,7 @@ pipeline {
           //deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://3.230.51.153:8080')], contextPath: null, war: '**/*.war'
           //deploy adapters: [tomcat9(credentialsId: 'tomcatnew', path: '', url: 'http://3.230.51.153:8080')], war: '**/*.war'
           //deploy adapters: [tomcat9(credentialsId: 'tomcatnew', path: '', url: 'http://3.230.51.153:8080')], contextPath: null, war: '**/*.war'
-          deploy adapters: [tomcat9(credentialsId: 'tomcat-latest', path: '', url: 'http://3.230.51.153:8080')], onFailure: false, war: '**/*.war'
+          deploy adapters: [tomcat9(credentialsId: 'tomcat-latest', path: '', url: 'http://34.230.84.3:8080')], onFailure: false, war: '**/*.war'
         }
       }
     }
